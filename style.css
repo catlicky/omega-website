@@ -106,6 +106,19 @@ img {
   margin-bottom: 20px;
   box-shadow: 0 4px 24px -8px rgba(0, 0, 0, 0.3);
 }
+.dev-panel {
+  background: var(--panel-bg);
+  backdrop-filter: blur(12px);
+  align-self : center;
+  align-items: center;
+  border: 1px solid rgba(41, 98, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 24px -8px rgba(0, 0, 0, 0.3);
+}
+
 
 input {
   width: 100%;
