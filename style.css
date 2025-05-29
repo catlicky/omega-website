@@ -20,17 +20,14 @@ body {
   color: var(--text);
   overflow-x: hidden;
   animation: fadeIn 0.8s ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 #particles-js {
@@ -53,14 +50,8 @@ header {
 }
 
 @keyframes slideDown {
-  from {
-    transform: translateY(-20px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }
 
 .nav-container {
@@ -98,8 +89,11 @@ header {
 .content {
   margin-top: 120px;
   margin-bottom: 80px;
-  text-align: center;
   padding: 0 20px;
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
 }
 
 h1 {
@@ -109,7 +103,6 @@ h1 {
   background: linear-gradient(135deg, #ffffff, #90caf9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: fadeIn 1s ease-in;
 }
 
 .dev-grid {
@@ -180,8 +173,9 @@ img {
   border: 1px solid rgba(41, 98, 255, 0.1);
   border-radius: 16px;
   padding: 2rem;
-  width: 100%;
-  margin-bottom: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  width: 90%;
   box-shadow: 0 4px 24px -8px rgba(0, 0, 0, 0.3);
 }
 
