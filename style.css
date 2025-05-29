@@ -89,10 +89,10 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 img {
-  border-radius : 25%;
   border-color : 5px solid rgb(255,255,255);
-  width : 200px;
-  height : 200px;
+  border-radius : 50%;
+  width : 150px;
+  height : 150px;
 
 }
 
